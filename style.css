@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #0f172a;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+/* Checkbox do tema */
+#tema {
+    display: none;
+}
+
+/* Botão do tema */
+#tema-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 12px;
+    background: #0284c7;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tema-btn:hover {
+    background: #0369a1;
+}
+
+/* Cabeçalho */
+header {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #0284c7;
+}
+
+header h1 {
+    color: #0284c7;
+    margin: 0 0 15px;
+}
+
+nav a {
+    color: #0f172a;
+    text-decoration: none;
+    margin: 0 8px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #0284c7;
+    color: white;
+}
+
+/* Conteúdo */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Título das páginas */
+.pagina-titulo {
+    text-align: center;
+    background: #dbeafe;
+    padding: 40px 25px;
+    margin: 30px 0;
+    border-radius: 12px;
+}
+
+.pagina-titulo img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Destaque da página inicial */
+.destaque {
+    text-align: center;
+    background: #dbeafe;
+    padding: 50px 25px;
+    margin: 30px 0;
+    border-radius: 12px;
+}
+
+.destaque img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #0284c7;
+}
+
+.conteudo,
+.produto,
+.informacoes,
+form,
+.depoimento {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+}
+
+.conteudo h3,
+.produto h3 {
+    color: #0369a1;
+}
+
+/* Botão principal */
+.botao {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background: #0369a1;
+}
+
+/* Produtos */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Depoimentos */
+.depoimento {
+    border-left: 5px solid #0284c7;
+}
+
+.depoimento footer {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/* Contato */
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    padding: 20px;
+}
+
+legend {
+    color: #0284c7;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+#tema-btn {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+input:not(#tema),
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+button {
+    background: #0284c7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+/* Galeria */
+.galeria {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.galeria figure {
+    display: inline-block;
+    width: 220px;
+    margin: 10px;
+}
+
+.produto img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* Rodapé */
+body > footer {
+    background: #020617;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 3px solid #0284c7;
+}
+
+footer img {
+    width: 100px;
+}
+
+
+body:has(#tema:checked) {
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+/* Cabeçalho */
+body:has(#tema:checked) header {
+    background: #1e293b;
+    border-bottom-color: #38bdf8;
+}
+
+body:has(#tema:checked) header h1 {
+    color: #38bdf8;
+}
+
+/* Menu */
+body:has(#tema:checked) nav a {
+    color: #f8fafc;
+}
+
+body:has(#tema:checked) nav a:hover {
+    background: #0284c7;
+    color: white;
+}
+
+/* Botão do tema */
+body:has(#tema:checked) #tema-btn {
+    background: #0284c7;
+    color: white;
+}
+
+body:has(#tema:checked) #tema-btn:hover {
+    background: #0369a1;
+}
+
+/* Títulos */
+body:has(#tema:checked) h2 {
+    color: #38bdf8;
+}
+
+body:has(#tema:checked) .conteudo h3,
+body:has(#tema:checked) .produto h3 {
+    color: #7dd3fc;
+}
+
+/* Destaques */
+body:has(#tema:checked) .destaque,
+body:has(#tema:checked) .pagina-titulo {
+    background: #172554;
+}
+
+/* Blocos */
+body:has(#tema:checked) .conteudo,
+body:has(#tema:checked) .produto,
+body:has(#tema:checked) .informacoes,
+body:has(#tema:checked) form,
+body:has(#tema:checked) .depoimento {
+    background: #1e293b;
+    color: #f8fafc;
+    border-color: #334155;
+}
+
+/* Campos do formulário */
+body:has(#tema:checked) fieldset {
+    border-color: #475569;
+}
+
+body:has(#tema:checked) input:not(#tema),
+body:has(#tema:checked) textarea {
+    background: #0f172a;
+    color: #f8fafc;
+    border-color: #475569;
+}
+
+/* Legenda do formulário */
+body:has(#tema:checked) legend {
+    color: #38bdf8;
+}
+
+/* Depoimentos */
+body:has(#tema:checked) .depoimento {
+    border-left-color: #38bdf8;
+}
+
+/* Galeria */
+body:has(#tema:checked) .galeria {
+    color: #f8fafc;
+}
+
+/* Rodapé */
+body:has(#tema:checked) > footer {
+    background: #020617;
+    color: white;
+    border-top-color: #0284c7;
+}
+
+
+@media (max-width: 768px) {
+
+    .produtos,
+    .contato {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px;
+    }
+}

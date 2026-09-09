@@ -10,8 +10,6 @@
 
 <body>
 
-    <input type="checkbox" id="tema">
-
     <header>
         <h1>PD Games</h1>
 
@@ -22,26 +20,43 @@
             <a href="contato.html">Contato</a>
         </nav>
 
-        <label for="tema" id="tema-btn">
-            🌙 Tema escuro
-        </label>
+        
+       <input type="checkbox" id="tema">
+       
+       <label for="tema" id="tema-btn">
+         <span class="texto-escuro">🌙 Tema escuro</span>
+         <span class="texto-claro">☀️ Tema claro</span>
+       </label>
     </header>
 
     <main>
 
         <section class="destaque">
-            <img src="img/destaque.jpg" alt="PD Games - desenvolvimento de jogos">
+           <section class="destaque">
 
-            <h2>Tecnologia, criatividade e diversão</h2>
+    <div class="destaque-conteudo">
 
-            <p>
-                A PD Games desenvolve experiências digitais utilizando
-                tecnologia e criatividade para transformar ideias em jogos.
-            </p>
+        <span class="destaque-tag">PD GAMES</span>
 
-            <a class="botao" href="produtos.html">
-                Conheça nossos projetos
-            </a>
+        <h2>Tecnologia, criatividade e diversão</h2>
+
+        <p>
+            A PD Games desenvolve experiências digitais utilizando
+            tecnologia e criatividade para transformar ideias em jogos.
+        </p>
+
+        <a class="botao" href="produtos.html">
+            Conheça nossos projetos
+            <span>→</span>
+        </a>
+
+    </div>
+
+    <div class="destaque-imagem">
+        <img src="img/destaque.jpg" alt="PD Games - desenvolvimento de jogos">
+    </div>
+
+</section>
         </section>
 
         <section class="conteudo">

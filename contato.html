@@ -13,84 +13,145 @@
     <header>
         <h1>PD Games</h1>
 
-        <nav>
+        <nav aria-label="Navegação principal">
             <a href="index.html">Início</a>
             <a href="sobre.html">Sobre a Empresa</a>
             <a href="produtos.html">Produtos</a>
             <a href="contato.html">Contato</a>
         </nav>
 
-       
-       <input type="checkbox" id="tema">
+        <input type="checkbox" id="tema">
 
-       <label for="tema" id="tema-btn">
-         <span class="texto-escuro">🌙 Tema escuro</span>
-         <span class="texto-claro">☀️ Tema claro</span>
-       </label>
+        <label for="tema" id="tema-btn">
+            <span class="texto-escuro">🌙 Tema escuro</span>
+            <span class="texto-claro">☀️ Tema claro</span>
+        </label>
     </header>
 
     <main>
 
         <section class="pagina-titulo">
-            <h2>Entre em contato</h2>
-
-            <p>
-                Fale com a equipe da PD Games.
-            </p>
-        </section>
-
-        <section class="contato">
-
-            <article class="informacoes">
-                <h2>Informações</h2>
+            <header>
+                <h2>Entre em contato</h2>
 
                 <p>
-                    Entre em contato para conhecer nossos projetos,
-                    apresentar uma ideia ou tirar dúvidas.
+                    Fale com a equipe da PD Games.
                 </p>
-
-                <p>Email: contato@pdgames.com</p>
-                <p>Telefone: (00) 00000-0000</p>
-            </article>
-
-            <form>
-
-                <fieldset>
-
-                    <legend>Envie uma mensagem</legend>
-
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required>
-
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-                    <button type="submit">
-                        Enviar
-                    </button>
-
-                </fieldset>
-
-            </form>
-
+            </header>
         </section>
+<section class="contato">
 
+    <article class="informacoes">
+
+        <h2>Informações</h2>
+
+        <p>
+            Entre em contato para conhecer nossos projetos,
+            apresentar uma ideia ou tirar dúvidas.
+        </p>
+
+        <p>
+            Estamos sempre abertos para novas ideias e projetos.
+            Se você tem uma sugestão ou deseja colaborar conosco,
+            não hesite em nos contatar.
+        </p>
+
+        <p>
+            Email: contato@pdgames.com
+        </p>
+
+        <p>
+            Telefone: (31) 9874-3100
+        </p>
+
+    </article>
+
+
+    <form>
+
+        <fieldset>
+
+            <legend>Envie uma mensagem</legend>
+
+            <p class="form-descricao">
+                Preencha os campos abaixo e fale com a nossa equipe.
+            </p>
+
+
+            <label for="nome">
+                Nome
+            </label>
+
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                autocomplete="name"
+                required
+            >
+
+
+            <label for="email">
+                E-mail
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seuemail@exemplo.com"
+                autocomplete="email"
+                required
+            >
+
+
+            <label for="mensagem">
+                Mensagem
+            </label>
+
+            <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="6"
+                placeholder="Digite sua mensagem..."
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Enviar mensagem →
+            </button>
+
+        </fieldset>
+
+    </form>
+
+</section>
+
+       
     </main>
 
     <footer>
-        <img src="img/logo.png" alt="Logo da PD Games">
+
+        <img
+            src="img/logo.png"
+            alt="Logo da PD Games"
+        >
 
         <p>
             © 2026 PD Games. Todos os direitos reservados.
         </p>
 
-        <p>
-            Contato: contato@pdgames.com
-        </p>
+        <address>
+            Contato:
+            <a href="mailto:contato@pdgames.com">
+                contato@pdgames.com
+            </a>
+        </address>
+
     </footer>
 
 </body>
+
 </html>

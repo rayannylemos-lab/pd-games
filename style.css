@@ -830,7 +830,7 @@ form:hover {
 }
 
 .informacoes p {
-    color: var(--cinza);
+    color: var(--preto);
 
     line-height: 1.8;
 
@@ -860,7 +860,7 @@ legend {
 }
 
 .form-descricao {
-    color: var(--cinza);
+    color: var(--preto);
 
     margin-bottom: 20px;
 
@@ -1067,7 +1067,7 @@ body:has(#tema:checked) {
         ),
         linear-gradient(
             135deg,
-            #e8f0f8 0%,
+            #dadde0 0%,
             #f8fafc 45%,
             #dfe9f3 100%
         );
@@ -1114,7 +1114,7 @@ body:has(#tema:checked) > header > h1 {
 }
 
 body:has(#tema:checked) > header nav a {
-    color: #334155;
+    color: #111418;
 }
 
 body:has(#tema:checked) > header nav a:hover {
@@ -1124,9 +1124,10 @@ body:has(#tema:checked) > header nav a:hover {
 body:has(#tema:checked) #tema-btn {
     background: rgba(15, 23, 42, 0.04);
 
-    color: #334155;
+    color: #8a95a1;
 
     border-color: #cbd5e1;
+
 }
 
 /* ==================================================
@@ -1138,7 +1139,7 @@ body:has(#tema:checked) .destaque h2 {
 }
 
 body:has(#tema:checked) .destaque p {
-    color: #64748b;
+    color: #263445;
 }
 
 body:has(#tema:checked) .destaque-tag {
@@ -1184,7 +1185,7 @@ body:has(#tema:checked) .depoimentos h2 {
 
 body:has(#tema:checked) .conteudo p,
 body:has(#tema:checked) .depoimentos > header p {
-    color: #64748b;
+    color: #263445;
 }
 
 /* ==================================================
@@ -1208,11 +1209,11 @@ body:has(#tema:checked) .conteudo h3 {
 ================================================== */
 
 body:has(#tema:checked) .pagina-titulo h2 {
-    color: #172033 !important;
+    color: #26365a !important;
 }
 
 body:has(#tema:checked) .pagina-titulo p {
-    color: #334155;
+    color: #1f2733;
 }
 
 body:has(#tema:checked) .produto h3 {
@@ -1220,7 +1221,7 @@ body:has(#tema:checked) .produto h3 {
 }
 
 body:has(#tema:checked) .produto p {
-    color: #64748b;
+    color: #243853;
 }
 
 /* ==================================================
@@ -1228,7 +1229,7 @@ body:has(#tema:checked) .produto p {
 ================================================== */
 
 body:has(#tema:checked) .depoimento p {
-    color: #475569;
+    color: #141a22;
 }
 
 body:has(#tema:checked) .depoimento footer {
@@ -1236,15 +1237,24 @@ body:has(#tema:checked) .depoimento footer {
 }
 
 body:has(#tema:checked) .depoimento footer span {
-    color: #64748b;
+    color: #3f4b5a;
 }
 
 /* ==================================================
    FORMULÁRIO - TEMA CLARO
 ================================================== */
 
+body:has(#tema:checked) .informacoes p,
+body:has(#tema:checked) .form-descricao {
+    color: #263445;
+}
+
+body:has(#tema:checked) .informacoes h2 {
+    color: #172033;
+}
+
 body:has(#tema:checked) fieldset {
-    border-color: #cbd5e1;
+    border-color: #1e2f44;
 }
 
 body:has(#tema:checked) legend {
@@ -1252,7 +1262,7 @@ body:has(#tema:checked) legend {
 }
 
 body:has(#tema:checked) label {
-    color: #334155;
+    color: #172033;
 }
 
 body:has(#tema:checked) input:not(#tema),
@@ -1261,7 +1271,12 @@ body:has(#tema:checked) textarea {
 
     color: #172033;
 
-    border-color: #cbd5e1;
+    border-color: #404347;
+}
+
+body:has(#tema:checked) input:not(#tema)::placeholder,
+body:has(#tema:checked) textarea::placeholder {
+    color: #475569;
 }
 
 /* ==================================================
@@ -1277,7 +1292,7 @@ body:has(#tema:checked) > footer {
 }
 
 body:has(#tema:checked) > footer p {
-    color: #64748b;
+    color: #263445;
 }
 
 /* ==================================================

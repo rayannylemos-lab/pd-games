@@ -161,7 +161,7 @@ body > header {
 ================================================== */
 
 body > header > img {
-    width: 150px;
+    width: 130px;
     height: auto;
     max-width: 150px;
     object-fit: contain;
@@ -175,7 +175,7 @@ body > header::before {
 
     position: absolute;
 
-    width: 150px;
+    width: 120px;
     height: 3px;
 
     left: 6%;
@@ -191,7 +191,7 @@ body > header nav a {
 
     text-decoration: none;
 
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     font-weight: 500;
 
     padding: 10px 15px;
@@ -206,7 +206,7 @@ body > header nav a::after {
 
     position: absolute;
 
-    left: 15px;
+    left: 30px;
     right: 15px;
     bottom: 4px;
 
@@ -265,7 +265,7 @@ main {
     height: 45px; 
 
     left: -10px; 
-    top: 8%; 
+    top: 9%; 
 
     border-left: 4px solid var(--amarelo); 
     border-top: 4px solid var(--amarelo); 
@@ -302,7 +302,7 @@ main {
 
     color: var(--amarelo);
 
-    font-size: 0.85rem;
+    font-size: 1.40rem;
     font-weight: 700;
 
     letter-spacing: 4px;
@@ -335,7 +335,7 @@ main {
 
     color: var(--branco);
 
-    font-size: clamp(3rem, 6vw, 5.8rem);
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
 
     line-height: 0.98;
     letter-spacing: -2px;
@@ -526,11 +526,16 @@ h3 {
 }
 
 .conteudo p {
+  .conteudo p {
     color: var(--cinza);
 
     max-width: 850px;
 
+    font-size: 1.1rem;
+
     line-height: 1.8;
+
+}
 }
 
 .pagina-titulo {

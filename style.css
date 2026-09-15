@@ -170,25 +170,20 @@ body > header > img {
 }
 
 /* Linha amarela abaixo da logo */
-body > header::after {
+body > header::before {
     content: "";
+
     position: absolute;
+
+    width: 150px;
+    height: 3px;
 
     left: 6%;
     bottom: 10px;
 
-    width: 60px;
-    height: 3px;
-
     background: var(--amarelo);
-    border-radius: 10px;
-}
 
-
-body > header nav {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    border-radius: 5px;
 }
 
 body > header nav a {
@@ -1136,7 +1131,7 @@ body:has(#tema:checked)::before {
 body:has(#tema:checked) > header {
     background: rgba(255, 255, 255, 0.88);
 
-    border-bottom-color: rgba(15, 23, 42, 0.08);
+    border-bottom-color: rgba(255, 255, 255, 0.88);
 }
 
 body:has(#tema:checked) > header > h1 {

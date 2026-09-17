@@ -134,7 +134,7 @@ body:has(#tema:checked) .texto-claro {
 
 body > header {
     width: 100%;
-    min-height: 90px;
+    min-height: 20px 6%; 
 
     display: flex;
     align-items: center;
@@ -255,12 +255,12 @@ main {
 ================================================== */
 
 .destaque { 
-    min-height: calc(100vh - 90px); 
+    min-height: auto;
     display: grid; 
     grid-template-columns: 1.05fr 0.95fr; 
     align-items: center; 
     gap: 70px; 
-    padding: 80px 0; 
+    padding: 40px 0; 
     position: relative; 
     overflow: visible; 
 }
@@ -489,7 +489,7 @@ h2 {
 
     color: var(--branco);
 
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 
     line-height: 1.1;
 }
@@ -509,7 +509,7 @@ h3 {
 
     padding: 40px;
 
-    margin: 30px 0;
+    margin: 60px 0;
 
     border-radius: 2px;
 
@@ -521,7 +521,7 @@ h3 {
 }
 
 .conteudo:hover {
-    border-color: rgba(245, 184, 46, 0.2);
+    border-color: var(--amarelo);
 
     transform: translateY(-3px);
 }
@@ -544,6 +544,7 @@ h3 {
 
 .pagina-titulo {
     text-align: center;
+    padding-top: 40px;
 }
 
 .pagina-titulo h2 {
@@ -752,7 +753,7 @@ h3 {
 
     line-height: 1;
 
-    color: rgba(245, 184, 46, 0.2);
+    color: var(--amarelo);
 }
 
 .depoimento p {
@@ -996,7 +997,7 @@ body:has(#tema:checked) .informacoes h2 {
 ================================================== */
 
 body > footer {
-    margin-top: 100px;
+    margin-top: 120px;
 
     padding: 55px 20px 35px;
 
@@ -1079,24 +1080,7 @@ body > footer p:last-of-type {
 ================================================== */
 
 body:has(#tema:checked) {
-    background:
-        radial-gradient(
-            circle at 15% 20%,
-            rgba(37, 99, 199, 0.14),
-            transparent 30%
-        ),
-        radial-gradient(
-            circle at 85% 75%,
-            rgba(245, 184, 46, 0.10),
-            transparent 28%
-        ),
-        linear-gradient(
-            135deg,
-            #dadde0 0%,
-            #f8fafc 45%,
-            #dfe9f3 100%
-        );
-
+    background: #eeeeee;
     color: #1e293b;
 }
 
@@ -1105,23 +1089,8 @@ body:has(#tema:checked) {
 ================================================== */
 
 body:has(#tema:checked)::before {
-    background-image:
-        linear-gradient(
-            120deg,
-            transparent 48%,
-            rgba(23, 78, 166, 0.035) 49%,
-            transparent 50%
-        ),
-        linear-gradient(
-            60deg,
-            transparent 48%,
-            rgba(23, 78, 166, 0.025) 49%,
-            transparent 50%
-        );
-
-    background-size: 180px 180px;
-
-    opacity: 0.5;
+    background-image: none;
+    opacity: 0;
 }
 
 /* ==================================================
@@ -1169,33 +1138,34 @@ body:has(#tema:checked) #tema-btn {
 ================================================== */
 
 body:has(#tema:checked) .destaque h2 {
-    color: #172033;
+    color: #00030a;
 }
 
 body:has(#tema:checked) .destaque p {
-    color: #263445;
+    color: #000000;
 }
 
 body:has(#tema:checked) .destaque-tag {
-    color:#f5b82e;
+    color:#070707;
 }
 
 body:has(#tema:checked) .destaque-tag::before {
-    background: #f5b82e;
+    background: #000000;
 }
 
-body:has(#tema:checked) .destaque::before {
-    border-color: #f5b82e;
+body:has(#tema:checked) .destaque-conteudo::before {
+    border-color: #000000;
 }
+
 
 body:has(#tema:checked) .destaque-imagem img {
-    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
 
     filter: brightness(0.95);
 }
 
 body:has(#tema:checked) .botao {
-    color: #172033;
+    color: #000103;
 }
 
 
@@ -1208,7 +1178,7 @@ body:has(#tema:checked) .produto,
 body:has(#tema:checked) .informacoes,
 body:has(#tema:checked) form,
 body:has(#tema:checked) .depoimento {
-    background: rgba(255, 255, 255, 0.85);
+    background: var(--branco);
 
     border-color: rgba(148, 163, 184, 0.25);
 
@@ -1219,12 +1189,12 @@ body:has(#tema:checked) .depoimento {
 
 body:has(#tema:checked) .conteudo h2,
 body:has(#tema:checked) .depoimentos h2 {
-    color: #172033;
+    color: #000000;
 }
 
 body:has(#tema:checked) .conteudo p,
 body:has(#tema:checked) .depoimentos > header p {
-    color: #263445;
+    color: #000000;
 }
 
 /* ==================================================
@@ -1236,11 +1206,11 @@ body:has(#tema:checked) .conteudo article {
 
     border-color: #e2e8f0;
 
-    border-top-color: #f5b82e;
+    border-top-color: #030303;
 }
 
 body:has(#tema:checked) .conteudo h3 {
-    color: #174ea6;
+    color: #000000;
 }
 
 /* ==================================================
@@ -1248,19 +1218,19 @@ body:has(#tema:checked) .conteudo h3 {
 ================================================== */
 
 body:has(#tema:checked) .pagina-titulo h2 {
-    color: #26365a !important;
+    color: #000000 !important;
 }
 
 body:has(#tema:checked) .pagina-titulo p {
-    color: #1f2733;
+    color: #000000;
 }
 
 body:has(#tema:checked) .produto h3 {
-    color: #174ea6;
+    color: #000000;
 }
 
 body:has(#tema:checked) .produto p {
-    color: #243853;
+    color: #000000;
 }
 
 /* ==================================================
@@ -1268,15 +1238,15 @@ body:has(#tema:checked) .produto p {
 ================================================== */
 
 body:has(#tema:checked) .depoimento p {
-    color: #141a22;
+    color: #000000;
 }
 
 body:has(#tema:checked) .depoimento footer {
-    color: #172033;
+    color: #000000;
 }
 
 body:has(#tema:checked) .depoimento footer span {
-    color: #3f4b5a;
+    color: #000000;
 }
 
 /* ==================================================
@@ -1285,23 +1255,23 @@ body:has(#tema:checked) .depoimento footer span {
 
 body:has(#tema:checked) .informacoes p,
 body:has(#tema:checked) .form-descricao {
-    color: #263445;
+    color: #000000;
 }
 
 body:has(#tema:checked) .informacoes h2 {
-    color: #172033;
+    color: #000000;
 }
 
 body:has(#tema:checked) fieldset {
-    border-color: #1e2f44;
+    border-color: #000000;
 }
 
 body:has(#tema:checked) legend {
-    color: #174ea6;
+    color: #000000;
 }
 
 body:has(#tema:checked) label {
-    color: #172033;
+    color: #000000;
 }
 
 body:has(#tema:checked) input:not(#tema),
@@ -1315,7 +1285,7 @@ body:has(#tema:checked) textarea {
 
 body:has(#tema:checked) input:not(#tema)::placeholder,
 body:has(#tema:checked) textarea::placeholder {
-    color: #475569;
+    color: #2d343b;
 }
 
 /* ==================================================
@@ -1365,7 +1335,7 @@ body:has(#tema:checked) > footer p {
 
         min-height: auto;
 
-        padding: 80px 0;
+        padding: 30px 0;
     }
 
     .destaque-conteudo {
